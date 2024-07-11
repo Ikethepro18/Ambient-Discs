@@ -1,5 +1,6 @@
 package ike.ambientdiscs;
 
+import ike.ambientdiscs.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,5 +13,7 @@ public class AmbientDiscs implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Starting Ambient Discs...");
+		ModItems.registerModItem();
+		LOGGER.info("Ambient Discs initialised, probably...");
 	}
 }
