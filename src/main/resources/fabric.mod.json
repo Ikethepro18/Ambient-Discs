@@ -3,20 +3,23 @@
 	"id": "ambient-discs",
 	"version": "${version}",
 	"name": "Ambient Discs",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adding music discs for your favourite ambient tracks",
 	"authors": [
-		"Me!"
+		"Ikethepro18"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "CC-BY-SA-4.0",
 	"icon": "assets/ambient-discs/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"ike.ambientdiscs.AmbientDiscs"
+		],
+		"client": [
+			"ike.ambientdiscs.AmbientDiscsClient"
 		],
 		"fabric-datagen": [
 			"ike.ambientdiscs.AmbientDiscsDataGenerator"
