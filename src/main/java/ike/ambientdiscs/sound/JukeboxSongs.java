@@ -26,6 +26,6 @@ public interface JukeboxSongs {
     }
 
     static void bootstrap(Registerable<JukeboxSong> registry) {
-        register(registry, ARIA_MATH, ModSounds.ARIA_MATH, 309, 10);
+        register(registry, ARIA_MATH, ModSounds.ARIA_MATH, 6, 10);
     }
 }
