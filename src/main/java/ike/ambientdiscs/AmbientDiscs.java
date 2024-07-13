@@ -1,5 +1,6 @@
 package ike.ambientdiscs;
 
+import ike.ambientdiscs.item.ModItemGroups;
 import ike.ambientdiscs.item.ModItems;
 import ike.ambientdiscs.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
@@ -14,6 +15,7 @@ public class AmbientDiscs implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Starting Ambient Discs...");
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItem();
 		ModSounds.registerSounds();
 		LOGGER.info("Ambient Discs initialised, probably...");
