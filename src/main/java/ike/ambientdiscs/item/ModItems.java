@@ -1,8 +1,7 @@
 package ike.ambientdiscs.item;
 
 import ike.ambientdiscs.AmbientDiscs;
-import ike.ambientdiscs.sound.ModSounds;
-import net.minecraft.block.jukebox.JukeboxSongs;
+import ike.ambientdiscs.sound.JukeboxSongs;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

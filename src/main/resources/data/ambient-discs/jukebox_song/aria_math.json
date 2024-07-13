@@ -1,8 +1,0 @@
-{
-  "comparator_output": 10,
-  "description": {
-    "translate": "jukebox_song.ambientdiscs.aria_math"
-  },
-  "length_in_seconds": 309.0,
-  "sound_event": "ambientdiscs:aria_math.ward"
-}
