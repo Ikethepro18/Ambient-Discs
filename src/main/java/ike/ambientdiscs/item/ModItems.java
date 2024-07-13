@@ -2,6 +2,7 @@ package ike.ambientdiscs.item;
 
 import ike.ambientdiscs.AmbientDiscs;
 import ike.ambientdiscs.sound.ModSounds;
+import net.minecraft.block.jukebox.JukeboxSongs;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -12,7 +13,7 @@ public class ModItems {
     //Copy paste for new items
     //I think
     public static final Item MUSIC_DISC_ARIA_MATH = registerItem("music_disc_aria_math",
-            new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModSounds.ARIA_MATH))
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(JukeboxSongs.ARIA_MATH))
         );
 
 
