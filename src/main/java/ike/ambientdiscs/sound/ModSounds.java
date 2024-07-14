@@ -10,14 +10,11 @@ import net.minecraft.util.Identifier;
 public class ModSounds {
     //Music disc sound event
     //Name is referring to in sounds.json which is where the sound file itself is specified
+    public static final RegistryEntry.Reference<SoundEvent> ALPHA = registerReference("alpha");
+    public static final RegistryEntry.Reference<SoundEvent> ANCESTRY = registerReference("ancestry");
+    public static final RegistryEntry.Reference<SoundEvent> AN_ORDINARY_DAY = registerReference("an_ordinary_day");
     public static final RegistryEntry.Reference<SoundEvent> ARIA_MATH = registerReference("aria_math");
-
-
-    //Register sound events with the game
-    public static SoundEvent registerSoundEvent(String name) {
-        Identifier id = Identifier.of(AmbientDiscs.MOD_ID, name);
-        return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
-    }
+    public static final RegistryEntry.Reference<SoundEvent> AXOLOTL = registerReference("axolotl");
 
     private static RegistryEntry.Reference<SoundEvent> registerReference(String id) {
         return registerReference(Identifier.ofVanilla(id));

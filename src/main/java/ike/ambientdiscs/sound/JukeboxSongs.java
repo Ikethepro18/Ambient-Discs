@@ -11,7 +11,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 
 public interface JukeboxSongs {
+    RegistryKey<JukeboxSong> ALPHA = of("alpha");
+    RegistryKey<JukeboxSong> ANCESTRY = of("ancestry");
+    RegistryKey<JukeboxSong> AN_ORDINARY_DAY = of("an_ordinary_day");
     RegistryKey<JukeboxSong> ARIA_MATH = of("aria_math");
+    RegistryKey<JukeboxSong> AXOLOTL = of("axolotl");
 
     private static RegistryKey<JukeboxSong> of(String id) {
         return RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.ofVanilla(id));
@@ -26,6 +30,10 @@ public interface JukeboxSongs {
     }
 
     static void bootstrap(Registerable<JukeboxSong> registry) {
-        register(registry, ARIA_MATH, ModSounds.ARIA_MATH, 6, 10);
+        register(registry, ALPHA, ModSounds.ALPHA, 603, 15);
+        register(registry, ANCESTRY, ModSounds.ANCESTRY, 343, 4);
+        register(registry, AN_ORDINARY_DAY, ModSounds.AN_ORDINARY_DAY, 331, 8);
+        register(registry, ARIA_MATH, ModSounds.ARIA_MATH, 309, 1);
+        register(registry, AXOLOTL, ModSounds.AXOLOTL, 303, 10);
     }
 }

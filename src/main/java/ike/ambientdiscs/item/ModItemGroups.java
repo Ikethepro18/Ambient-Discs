@@ -17,7 +17,11 @@ public class ModItemGroups {
             .displayName(Text.translatable("itemgroup.ambient_discs"))
             .entries((displayContext, entries) -> {
                 //Add items here
+                entries.add(ModItems.MUSIC_DISC_ALPHA);
+                entries.add(ModItems.MUSIC_DISC_ANCESTRY);
+                entries.add(ModItems.MUSIC_DISC_AN_ORDINARY_DAY);
                 entries.add(ModItems.MUSIC_DISC_ARIA_MATH);
+                entries.add(ModItems.MUSIC_DISC_AXOLOTL);
             })
             .build();
 

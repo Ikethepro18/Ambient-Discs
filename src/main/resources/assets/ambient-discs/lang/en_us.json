@@ -1,6 +1,18 @@
 {
+  "item.ambient-discs.music_disc_alpha": "Music Disc",
+  "item.ambient-discs.music_disc_alpha.desc": "C418 - Alpha",
+
+  "item.ambient-discs.music_disc_an_ordinary_day": "Music Disc",
+  "item.ambient-discs.music_disc_an_ordinary_day.desc": "Kumi Tanioka - An Ordinary Day",
+
+  "item.ambient-discs.music_disc_ancestry": "Music Disc",
+  "item.ambient-discs.music_disc_ancestry.desc": "Lena Raine - Ancestry",
+
   "item.ambient-discs.music_disc_aria_math": "Music Disc",
   "item.ambient-discs.music_disc_aria_math.desc": "C418 - Aria Math",
+
+  "item.ambient-discs.music_disc_axolotl": "Music Disc",
+  "item.ambient-discs.music_disc_axolotl.desc": "C418 - Axolotl",
 
   "itemgroup.ambient_discs": "Ambient Discs"
 }
