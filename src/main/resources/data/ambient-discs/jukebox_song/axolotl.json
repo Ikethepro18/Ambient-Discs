@@ -1,8 +1,6 @@
 {
   "comparator_output": 10,
-  "description": {
-    "translate": "jukebox_song.ambient-discs.axolotl"
-  },
+  "description": "C418 - Axolotl",
   "length_in_seconds": 303.0,
   "sound_event": "ambient-discs:axolotl"
 }

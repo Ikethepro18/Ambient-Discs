@@ -1,7 +1,7 @@
 package ike.ambientdiscs.item;
 
 import ike.ambientdiscs.AmbientDiscs;
-import ike.ambientdiscs.sound.JukeboxSongs;
+import ike.ambientdiscs.sound.ModdedJukeboxSongs;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -17,16 +17,16 @@ public class ModItems {
     //Don't forget to add to custom creative tab in ModItemGroups
     //And to add textures/models
     //And to add to langs
-    //And in JukeboxSongs
+    //And in ModdedJukeboxSongs
     //And in ModSounds
 
-  //public static final Item {internalName} = registerItem("{itemID}", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(JukeboxSongs.{song})));
+  //public static final Item {internalName} = registerItem("{itemID}", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.{song})));
 
-    public static final Item MUSIC_DISC_ALPHA = registerItem("music_disc_alpha", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(JukeboxSongs.ALPHA)));
-    public static final Item MUSIC_DISC_ANCESTRY = registerItem("music_disc_ancestry", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(JukeboxSongs.ANCESTRY)));
-    public static final Item MUSIC_DISC_AN_ORDINARY_DAY = registerItem("music_disc_an_ordinary_day", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(JukeboxSongs.AN_ORDINARY_DAY)));
-    public static final Item MUSIC_DISC_ARIA_MATH = registerItem("music_disc_aria_math", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(JukeboxSongs.ARIA_MATH)));
-    public static final Item MUSIC_DISC_AXOLOTL = registerItem("music_disc_axolotl", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(JukeboxSongs.AXOLOTL)));
+    public static final Item MUSIC_DISC_ALPHA = registerItem("music_disc_alpha", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ALPHA)));
+    public static final Item MUSIC_DISC_ANCESTRY = registerItem("music_disc_ancestry", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ANCESTRY)));
+    public static final Item MUSIC_DISC_AN_ORDINARY_DAY = registerItem("music_disc_an_ordinary_day", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.AN_ORDINARY_DAY)));
+    public static final Item MUSIC_DISC_ARIA_MATH = registerItem("music_disc_aria_math", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ARIA_MATH)));
+    public static final Item MUSIC_DISC_AXOLOTL = registerItem("music_disc_axolotl", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.AXOLOTL)));
 
     //Adds items to the Tools & Utilities tab in the creative inventory
     //Called at [1]
