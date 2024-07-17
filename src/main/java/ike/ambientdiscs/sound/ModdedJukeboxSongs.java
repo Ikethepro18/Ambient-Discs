@@ -1,5 +1,6 @@
 package ike.ambientdiscs.sound;
 
+import ike.ambientdiscs.AmbientDiscs;
 import net.minecraft.block.jukebox.JukeboxSong;
 import net.minecraft.block.jukebox.JukeboxSongs;
 import net.minecraft.registry.RegistryKey;
@@ -14,6 +15,6 @@ public interface ModdedJukeboxSongs extends JukeboxSongs {
     RegistryKey<JukeboxSong> AXOLOTL = of("axolotl");
 
     private static RegistryKey<JukeboxSong> of(String id) {
-        return RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.ofVanilla(id));
+        return RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(AmbientDiscs.MOD_ID, id));
     }
 }

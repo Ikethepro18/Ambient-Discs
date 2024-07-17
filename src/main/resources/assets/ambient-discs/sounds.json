@@ -2,7 +2,7 @@
   "alpha": {
     "sounds": [
       {
-        "name": "minecraft:music/game/end/alpha.ogg",
+        "name": "minecraft:music/game/end/alpha",
         "stream": true
       }
     ]
@@ -10,7 +10,7 @@
   "ancestry": {
     "sounds": [
       {
-        "name": "minecraft:music/game/ancestry.ogg",
+        "name": "minecraft:music/game/ancestry",
         "stream": true
       }
     ]
@@ -18,7 +18,7 @@
   "an_ordinary_day": {
     "sounds": [
       {
-        "name": "minecraft:music/game/an_ordinary_day.ogg",
+        "name": "minecraft:music/game/an_ordinary_day",
         "stream": true
       }
     ]
@@ -26,7 +26,7 @@
   "aria_math": {
     "sounds": [
       {
-        "name": "minecraft:music/game/creative/aria_math.ogg",
+        "name": "minecraft:music/game/creative/aria_math",
         "stream": true
       }
     ]
@@ -34,7 +34,7 @@
   "axolotl": {
     "sounds": [
       {
-        "name": "minecraft:music/game/water/axolotl.ogg",
+        "name": "minecraft:music/game/water/axolotl",
         "stream": true
       }
     ]
