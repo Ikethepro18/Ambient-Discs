@@ -25,6 +25,7 @@ public class ModItems {
 
     public static final Item MUSIC_DISC_ALPHA = registerItem("music_disc_alpha", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ALPHA)));
     public static final Item MUSIC_DISC_ANCESTRY = registerItem("music_disc_ancestry", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ANCESTRY)));
+    public static final Item MUSIC_DISC_A_FAMILIAR_ROOM = registerItem("music_disc_a_familiar_room", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.A_FAMILIAR_ROOM)));
     public static final Item MUSIC_DISC_AN_ORDINARY_DAY = registerItem("music_disc_an_ordinary_day", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.AN_ORDINARY_DAY)));
     public static final Item MUSIC_DISC_ARIA_MATH = registerItem("music_disc_aria_math", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ARIA_MATH)));
     public static final Item MUSIC_DISC_AXOLOTL = registerItem("music_disc_axolotl", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.AXOLOTL)));
@@ -34,6 +35,7 @@ public class ModItems {
     private static void addToToolsAndUtilities(@NotNull FabricItemGroupEntries entries) {
         entries.add(MUSIC_DISC_ALPHA);
         entries.add(MUSIC_DISC_ANCESTRY);
+        entries.add(MUSIC_DISC_A_FAMILIAR_ROOM);
         entries.add(MUSIC_DISC_AN_ORDINARY_DAY);
         entries.add(MUSIC_DISC_ARIA_MATH);
         entries.add(MUSIC_DISC_AXOLOTL);

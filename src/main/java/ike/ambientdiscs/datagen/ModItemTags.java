@@ -18,6 +18,7 @@ public class ModItemTags extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
                 .add(ModItems.MUSIC_DISC_ALPHA)
                 .add(ModItems.MUSIC_DISC_ANCESTRY)
+                .add(ModItems.MUSIC_DISC_A_FAMILIAR_ROOM)
                 .add(ModItems.MUSIC_DISC_AN_ORDINARY_DAY)
                 .add(ModItems.MUSIC_DISC_ARIA_MATH)
                 .add(ModItems.MUSIC_DISC_AXOLOTL);

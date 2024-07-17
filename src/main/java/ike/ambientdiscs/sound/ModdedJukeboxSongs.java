@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 public interface ModdedJukeboxSongs extends JukeboxSongs {
     RegistryKey<JukeboxSong> ALPHA = of("alpha");
     RegistryKey<JukeboxSong> ANCESTRY = of("ancestry");
+    RegistryKey<JukeboxSong> A_FAMILIAR_ROOM = of("a_familiar_room");
     RegistryKey<JukeboxSong> AN_ORDINARY_DAY = of("an_ordinary_day");
     RegistryKey<JukeboxSong> ARIA_MATH = of("aria_math");
     RegistryKey<JukeboxSong> AXOLOTL = of("axolotl");

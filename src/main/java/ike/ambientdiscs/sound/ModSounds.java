@@ -11,6 +11,7 @@ public class ModSounds {
     //Name is referring to in sounds.json which is where the sound file itself is specified
     public static final SoundEvent ALPHA = registerSoundEvent("alpha");
     public static final SoundEvent ANCESTRY = registerSoundEvent("ancestry");
+    public static final SoundEvent A_FAMILIAR_ROOM = registerSoundEvent("a_familiar_room");
     public static final SoundEvent AN_ORDINARY_DAY = registerSoundEvent("an_ordinary_day");
     public static final SoundEvent ARIA_MATH = registerSoundEvent("aria_math");
     public static final SoundEvent AXOLOTL = registerSoundEvent("axolotl");

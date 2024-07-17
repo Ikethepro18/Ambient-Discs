@@ -19,6 +19,7 @@ public class ModItemGroups {
                 //Add items here
                 entries.add(ModItems.MUSIC_DISC_ALPHA);
                 entries.add(ModItems.MUSIC_DISC_ANCESTRY);
+                entries.add(ModItems.MUSIC_DISC_A_FAMILIAR_ROOM);
                 entries.add(ModItems.MUSIC_DISC_AN_ORDINARY_DAY);
                 entries.add(ModItems.MUSIC_DISC_ARIA_MATH);
                 entries.add(ModItems.MUSIC_DISC_AXOLOTL);

@@ -23,6 +23,7 @@ public class ModModels extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.MUSIC_DISC_ALPHA, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_ANCESTRY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_A_FAMILIAR_ROOM, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_AN_ORDINARY_DAY, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_ARIA_MATH, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_AXOLOTL, Models.GENERATED);
