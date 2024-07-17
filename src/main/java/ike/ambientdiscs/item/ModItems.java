@@ -15,10 +15,11 @@ import org.jetbrains.annotations.NotNull;
 public class ModItems {
     //All items
     //Don't forget to add to custom creative tab in ModItemGroups
-    //And to add textures/models
+    //And to add textures/models (datagen)
     //And to add to langs
     //And in ModdedJukeboxSongs
     //And in ModSounds
+    //And to music_discs.json
 
   //public static final Item {internalName} = registerItem("{itemID}", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.{song})));
 
