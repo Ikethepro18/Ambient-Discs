@@ -5,7 +5,6 @@
   "item.ambient-discs.music_disc_a_familiar_room": "Music Disc",
   "item.ambient-discs.music_disc_a_familiar_room.desc": "Aaron Cherof - A Familiar Room",
 
-
   "item.ambient-discs.music_disc_an_ordinary_day": "Music Disc",
   "item.ambient-discs.music_disc_an_ordinary_day.desc": "Kumi Tanioka - An Ordinary Day",
 
@@ -17,6 +16,9 @@
 
   "item.ambient-discs.music_disc_axolotl": "Music Disc",
   "item.ambient-discs.music_disc_axolotl.desc": "C418 - Axolotl",
+
+  "item.ambient-discs.music_disc_sweden": "Music Disc",
+  "item.ambient-discs.music_disc_sweden.desc": "C418 - Sweden",
 
   "itemgroup.ambient_discs": "Ambient Discs"
 }

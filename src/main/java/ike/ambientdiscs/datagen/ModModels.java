@@ -27,5 +27,6 @@ public class ModModels extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MUSIC_DISC_AN_ORDINARY_DAY, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_ARIA_MATH, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_AXOLOTL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_SWEDEN, Models.GENERATED);
     }
 }

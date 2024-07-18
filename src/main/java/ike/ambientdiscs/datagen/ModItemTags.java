@@ -21,6 +21,7 @@ public class ModItemTags extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.MUSIC_DISC_A_FAMILIAR_ROOM)
                 .add(ModItems.MUSIC_DISC_AN_ORDINARY_DAY)
                 .add(ModItems.MUSIC_DISC_ARIA_MATH)
-                .add(ModItems.MUSIC_DISC_AXOLOTL);
+                .add(ModItems.MUSIC_DISC_AXOLOTL)
+                .add(ModItems.MUSIC_DISC_SWEDEN);
     }
 }

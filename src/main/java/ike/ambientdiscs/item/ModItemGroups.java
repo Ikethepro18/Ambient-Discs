@@ -23,6 +23,7 @@ public class ModItemGroups {
                 entries.add(ModItems.MUSIC_DISC_AN_ORDINARY_DAY);
                 entries.add(ModItems.MUSIC_DISC_ARIA_MATH);
                 entries.add(ModItems.MUSIC_DISC_AXOLOTL);
+                entries.add(ModItems.MUSIC_DISC_SWEDEN);
             })
             .build();
 

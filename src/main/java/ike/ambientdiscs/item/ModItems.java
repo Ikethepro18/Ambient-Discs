@@ -29,6 +29,7 @@ public class ModItems {
     public static final Item MUSIC_DISC_AN_ORDINARY_DAY = registerItem("music_disc_an_ordinary_day", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.AN_ORDINARY_DAY)));
     public static final Item MUSIC_DISC_ARIA_MATH = registerItem("music_disc_aria_math", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ARIA_MATH)));
     public static final Item MUSIC_DISC_AXOLOTL = registerItem("music_disc_axolotl", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.AXOLOTL)));
+    public static final Item MUSIC_DISC_SWEDEN = registerItem("music_disc_sweden", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.SWEDEN)));
 
     //Adds items to the Tools & Utilities tab in the creative inventory
     //Called at [1]
@@ -39,6 +40,7 @@ public class ModItems {
         entries.add(MUSIC_DISC_AN_ORDINARY_DAY);
         entries.add(MUSIC_DISC_ARIA_MATH);
         entries.add(MUSIC_DISC_AXOLOTL);
+        entries.add(MUSIC_DISC_SWEDEN);
     }
 
     //Does the registering of items so that the game knows they exist

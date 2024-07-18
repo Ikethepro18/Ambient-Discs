@@ -4,5 +4,6 @@
   "a_familiar_room": {"sounds": ["minecraft:music/game/a_familiar_room"]},
   "an_ordinary_day": {"sounds": ["minecraft:music/game/an_ordinary_day"]},
   "aria_math": {"sounds": ["minecraft:music/game/creative/aria_math"]},
-  "axolotl": {"sounds": ["minecraft:music/game/water/axolotl"]}
+  "axolotl": {"sounds": ["minecraft:music/game/water/axolotl"]},
+  "sweden": {"sounds": ["minecraft:music/game/sweden"]}
 }
