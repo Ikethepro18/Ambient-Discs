@@ -1,24 +1,40 @@
 {
   "item.ambient-discs.music_disc_alpha": "Music Disc",
-  "item.ambient-discs.music_disc_alpha.desc": "C418 - Alpha",
-
   "item.ambient-discs.music_disc_a_familiar_room": "Music Disc",
-  "item.ambient-discs.music_disc_a_familiar_room.desc": "Aaron Cherof - A Familiar Room",
-
   "item.ambient-discs.music_disc_an_ordinary_day": "Music Disc",
-  "item.ambient-discs.music_disc_an_ordinary_day.desc": "Kumi Tanioka - An Ordinary Day",
-
   "item.ambient-discs.music_disc_ancestry": "Music Disc",
-  "item.ambient-discs.music_disc_ancestry.desc": "Lena Raine - Ancestry",
-
   "item.ambient-discs.music_disc_aria_math": "Music Disc",
-  "item.ambient-discs.music_disc_aria_math.desc": "C418 - Aria Math",
-
   "item.ambient-discs.music_disc_axolotl": "Music Disc",
-  "item.ambient-discs.music_disc_axolotl.desc": "C418 - Axolotl",
-
+  "item.ambient-discs.music_disc_bromeliad": "Music Disc",
+  "item.ambient-discs.music_disc_clark": "Music Disc",
+  "item.ambient-discs.music_disc_comforting_memories": "Music Disc",
+  "item.ambient-discs.music_disc_crescent_dunes": "Music Disc",
+  "item.ambient-discs.music_disc_danny": "Music Disc",
+  "item.ambient-discs.music_disc_deeper": "Music Disc",
+  "item.ambient-discs.music_disc_dry_hands": "Music Disc",
+  "item.ambient-discs.music_disc_echo_in_the_wind": "Music Disc",
+  "item.ambient-discs.music_disc_eld_unknown": "Music Disc",
+  "item.ambient-discs.music_disc_endless": "Music Disc",
+  "item.ambient-discs.music_disc_featherfall": "Music Disc",
+  "item.ambient-discs.music_disc_floating_dream": "Music Disc",
+  "item.ambient-discs.music_disc_haggstrom": "Music Disc",
+  "item.ambient-discs.music_disc_infinite_amethyst": "Music Disc",
+  "item.ambient-discs.music_disc_key": "Music Disc",
+  "item.ambient-discs.music_disc_komorebi": "Music Disc",
+  "item.ambient-discs.music_disc_left_to_bloom": "Music Disc",
+  "item.ambient-discs.music_disc_living_mice": "Music Disc",
+  "item.ambient-discs.music_disc_mice_on_venus": "Music Disc",
+  "item.ambient-discs.music_disc_minecraft": "Music Disc",
+  "item.ambient-discs.music_disc_one_more_day": "Music Disc",
+  "item.ambient-discs.music_disc_oxygene": "Music Disc",
+  "item.ambient-discs.music_disc_pokopoko": "Music Disc",
+  "item.ambient-discs.music_disc_puzzlebox": "Music Disc",
+  "item.ambient-discs.music_disc_stand_tall": "Music Disc",
+  "item.ambient-discs.music_disc_subwoofer_lullaby": "Music Disc",
   "item.ambient-discs.music_disc_sweden": "Music Disc",
-  "item.ambient-discs.music_disc_sweden.desc": "C418 - Sweden",
-
+  "item.ambient-discs.music_disc_watcher": "Music Disc",
+  "item.ambient-discs.music_disc_wending": "Music Disc",
+  "item.ambient-discs.music_disc_wet_hands": "Music Disc",
+  "item.ambient-discs.music_disc_yakusoku": "Music Disc",
   "itemgroup.ambient_discs": "Ambient Discs"
 }
