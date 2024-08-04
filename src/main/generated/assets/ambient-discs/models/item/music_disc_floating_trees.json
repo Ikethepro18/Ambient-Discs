@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ambient-discs:item/music_disc_floating_trees"
+  }
+}

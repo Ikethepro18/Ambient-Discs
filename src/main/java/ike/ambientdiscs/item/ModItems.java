@@ -15,20 +15,18 @@ import org.jetbrains.annotations.NotNull;
 public class ModItems {
     //All items
     //Don't forget to add to custom creative tab in ModItemGroups
+    //And in ModSounds
+    //And in ModdedJukeboxSongs
     //And to add textures/models (datagen)
     //And to add to langs
-    //And in ModdedJukeboxSongs
-    //And in ModSounds
     //And to music_discs.json
 
   //public static final Item MUSIC_DISC_ = registerItem("music_disc_", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.{song})));
 
+    //General songs
     public static final Item MUSIC_DISC_A_FAMILIAR_ROOM = registerItem("music_disc_a_familiar_room", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.A_FAMILIAR_ROOM)));
-    public static final Item MUSIC_DISC_ALPHA = registerItem("music_disc_alpha", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ALPHA)));
     public static final Item MUSIC_DISC_AN_ORDINARY_DAY = registerItem("music_disc_an_ordinary_day", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.AN_ORDINARY_DAY)));
     public static final Item MUSIC_DISC_ANCESTRY = registerItem("music_disc_ancestry", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ANCESTRY)));
-    public static final Item MUSIC_DISC_ARIA_MATH = registerItem("music_disc_aria_math", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ARIA_MATH)));
-    public static final Item MUSIC_DISC_AXOLOTL = registerItem("music_disc_axolotl", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.AXOLOTL)));
     public static final Item MUSIC_DISC_BROMELIAD = registerItem("music_disc_bromeliad", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.BROMELIAD)));
     public static final Item MUSIC_DISC_CLARK = registerItem("music_disc_clark", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.CLARK)));
     public static final Item MUSIC_DISC_COMFORTING_MEMORIES = registerItem("music_disc_comforting_memories", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.COMFORTING_MEMORIES)));
@@ -61,42 +59,104 @@ public class ModItems {
     public static final Item MUSIC_DISC_WET_HANDS = registerItem("music_disc_wet_hands", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.WET_HANDS)));
     public static final Item MUSIC_DISC_YAKUSOKU = registerItem("music_disc_yakusoku", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.YAKUSOKU)));
 
+    //Creative mode
+    public static final Item MUSIC_DISC_ARIA_MATH = registerItem("music_disc_aria_math", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ARIA_MATH)));
+    public static final Item MUSIC_DISC_BIOME_FEST = registerItem("music_disc_biome_fest", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.BIOME_FEST)));
+    public static final Item MUSIC_DISC_BLIND_SPOTS = registerItem("music_disc_blind_spots", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.BLIND_SPOTS)));
+    public static final Item MUSIC_DISC_DREITON = registerItem("music_disc_dreiton", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.DREITON)));
+    public static final Item MUSIC_DISC_HAUNT_MUSKIE = registerItem("music_disc_haunt_muskie", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.HAUNT_MUSKIE)));
+    public static final Item MUSIC_DISC_TASWELL = registerItem("music_disc_taswell", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.TASWELL)));
+
+    //The end
+    public static final Item MUSIC_DISC_ALPHA = registerItem("music_disc_alpha", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.ALPHA)));
+    public static final Item MUSIC_DISC_BOSS = registerItem("music_disc_boss", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.BOSS)));
+    public static final Item MUSIC_DISC_THE_END = registerItem("music_disc_the_end", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.THE_END)));
+
+    //The Nether
+    public static final Item MUSIC_DISC_BALLAD_OF_THE_CATS = registerItem("music_disc_ballad_of_the_cats", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.BALLAD_OF_THE_CATS)));
+    public static final Item MUSIC_DISC_CHRYSOPOEIA = registerItem("music_disc_chrysopoeia", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.CHRYSOPOEIA)));
+    public static final Item MUSIC_DISC_CONCRETE_HALLS = registerItem("music_disc_concrete_halls", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.CONCRETE_HALLS)));
+    public static final Item MUSIC_DISC_DEAD_VOXEL = registerItem("music_disc_dead_voxel", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.DEAD_VOXEL)));
+    public static final Item MUSIC_DISC_RUBEDO = registerItem("music_disc_rubedo", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.RUBEDO)));
+    public static final Item MUSIC_DISC_SO_BELOW = registerItem("music_disc_so_below", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.SO_BELOW)));
+    public static final Item MUSIC_DISC_WARMTH = registerItem("music_disc_warmth", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.WARMTH)));
+
+    //Swamps
+    public static final Item MUSIC_DISC_AERIE = registerItem("music_disc_aerie", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.AERIE)));
+    public static final Item MUSIC_DISC_FIREBUGS = registerItem("music_disc_firebugs", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.FIREBUGS)));
+    public static final Item MUSIC_DISC_LABYRINTHINE = registerItem("music_disc_labyrinthine", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.LABYRINTHINE)));
+
+    //Underwater
+    public static final Item MUSIC_DISC_AXOLOTL = registerItem("music_disc_axolotl", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.AXOLOTL)));
+    public static final Item MUSIC_DISC_DRAGON_FISH = registerItem("music_disc_dragon_fish", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.DRAGON_FISH)));
+    public static final Item MUSIC_DISC_SHUNIJI = registerItem("music_disc_shuniji", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.SHUNIJI)));
+
+    //Main menu only
+    public static final Item MUSIC_DISC_BEGINNING_2 = registerItem("music_disc_beginning_2", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.BEGINNING_2)));
+    public static final Item MUSIC_DISC_FLOATING_TREES = registerItem("music_disc_floating_trees", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.FLOATING_TREES)));
+    public static final Item MUSIC_DISC_MOOG_CITY_2 = registerItem("music_disc_moog_city_2", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.MOOG_CITY_2)));
+    public static final Item MUSIC_DISC_MUTATION = registerItem("music_disc_mutation", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModdedJukeboxSongs.MUTATION)));
+
+
     //Adds items to the Tools & Utilities tab in the creative inventory
     //Called at [1]
     private static void addToToolsAndUtilities(@NotNull FabricItemGroupEntries entries) {
         entries.add(MUSIC_DISC_A_FAMILIAR_ROOM);
+        entries.add(MUSIC_DISC_AERIE);
         entries.add(MUSIC_DISC_ALPHA);
         entries.add(MUSIC_DISC_AN_ORDINARY_DAY);
         entries.add(MUSIC_DISC_ANCESTRY);
         entries.add(MUSIC_DISC_ARIA_MATH);
         entries.add(MUSIC_DISC_AXOLOTL);
+        entries.add(MUSIC_DISC_BALLAD_OF_THE_CATS);
+        entries.add(MUSIC_DISC_BEGINNING_2);
+        entries.add(MUSIC_DISC_BIOME_FEST);
+        entries.add(MUSIC_DISC_BLIND_SPOTS);
+        entries.add(MUSIC_DISC_BOSS);
         entries.add(MUSIC_DISC_BROMELIAD);
+        entries.add(MUSIC_DISC_CHRYSOPOEIA);
         entries.add(MUSIC_DISC_CLARK);
         entries.add(MUSIC_DISC_COMFORTING_MEMORIES);
+        entries.add(MUSIC_DISC_CONCRETE_HALLS);
         entries.add(MUSIC_DISC_CRESCENT_DUNES);
         entries.add(MUSIC_DISC_DANNY);
+        entries.add(MUSIC_DISC_DEAD_VOXEL);
         entries.add(MUSIC_DISC_DEEPER);
+        entries.add(MUSIC_DISC_DRAGON_FISH);
+        entries.add(MUSIC_DISC_DREITON);
         entries.add(MUSIC_DISC_DRY_HANDS);
         entries.add(MUSIC_DISC_ECHO_IN_THE_WIND);
         entries.add(MUSIC_DISC_ELD_UNKNOWN);
         entries.add(MUSIC_DISC_ENDLESS);
         entries.add(MUSIC_DISC_FEATHERFALL);
+        entries.add(MUSIC_DISC_FIREBUGS);
         entries.add(MUSIC_DISC_FLOATING_DREAM);
+        entries.add(MUSIC_DISC_FLOATING_TREES);
         entries.add(MUSIC_DISC_HAGGSTROM);
+        entries.add(MUSIC_DISC_HAUNT_MUSKIE);
         entries.add(MUSIC_DISC_INFINITE_AMETHYST);
         entries.add(MUSIC_DISC_KEY);
         entries.add(MUSIC_DISC_KOMOREBI);
+        entries.add(MUSIC_DISC_LABYRINTHINE);
         entries.add(MUSIC_DISC_LEFT_TO_BLOOM);
         entries.add(MUSIC_DISC_LIVING_MICE);
         entries.add(MUSIC_DISC_MICE_ON_VENUS);
         entries.add(MUSIC_DISC_MINECRAFT);
+        entries.add(MUSIC_DISC_MOOG_CITY_2);
+        entries.add(MUSIC_DISC_MUTATION);
         entries.add(MUSIC_DISC_ONE_MORE_DAY);
         entries.add(MUSIC_DISC_OXYGENE);
         entries.add(MUSIC_DISC_POKOPOKO);
         entries.add(MUSIC_DISC_PUZZLEBOX);
+        entries.add(MUSIC_DISC_RUBEDO);
+        entries.add(MUSIC_DISC_SHUNIJI);
+        entries.add(MUSIC_DISC_SO_BELOW);
         entries.add(MUSIC_DISC_STAND_TALL);
         entries.add(MUSIC_DISC_SUBWOOFER_LULLABY);
         entries.add(MUSIC_DISC_SWEDEN);
+        entries.add(MUSIC_DISC_TASWELL);
+        entries.add(MUSIC_DISC_THE_END);
+        entries.add(MUSIC_DISC_WARMTH);
         entries.add(MUSIC_DISC_WATCHER);
         entries.add(MUSIC_DISC_WENDING);
         entries.add(MUSIC_DISC_WET_HANDS);
