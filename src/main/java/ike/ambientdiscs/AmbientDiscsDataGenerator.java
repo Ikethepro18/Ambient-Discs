@@ -1,6 +1,7 @@
 package ike.ambientdiscs;
 
 import ike.ambientdiscs.datagen.ModItemTags;
+import ike.ambientdiscs.datagen.ModLangs;
 import ike.ambientdiscs.datagen.ModModels;
 import ike.ambientdiscs.sound.ModdedJukeboxSongs;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -15,6 +16,7 @@ public class AmbientDiscsDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(ModItemTags::new);
 		pack.addProvider(ModModels::new);
+		pack.addProvider(ModLangs::new);
 	}
 
 	@Override
