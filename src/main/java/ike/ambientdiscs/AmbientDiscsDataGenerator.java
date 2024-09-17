@@ -9,6 +9,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
+import static ModLangs.addLanguageProviders;
+
 public class AmbientDiscsDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
@@ -16,7 +18,7 @@ public class AmbientDiscsDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(ModItemTags::new);
 		pack.addProvider(ModModels::new);
-		pack.addProvider(ModLangs::new);
+		addLanguageProviders(pack::addProvider);
 	}
 
 	@Override
