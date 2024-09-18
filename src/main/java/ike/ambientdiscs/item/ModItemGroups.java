@@ -7,77 +7,19 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 //Custom creative tab to contain all the mod's discs
 public class ModItemGroups {
-    public static final RegistryKey<ItemGroup> AMBIENT_DISCS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(AmbientDiscs.MOD_ID, "ambient_discs"));
+    public static final RegistryKey<ItemGroup> AMBIENT_DISCS_KEY = RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(AmbientDiscs.MOD_ID, "ambient_discs"));
     public static final ItemGroup AMBIENT_DISCS = FabricItemGroup.builder()
             .icon(() -> new ItemStack(ModItems.MUSIC_DISC_ARIA_MATH))
             .displayName(Text.translatable("itemgroup.ambient_discs"))
             .entries((displayContext, entries) -> {
                 //Add items here
-                entries.add(ModItems.MUSIC_DISC_A_FAMILIAR_ROOM);
-                entries.add(ModItems.MUSIC_DISC_ALPHA);
-                entries.add(ModItems.MUSIC_DISC_AN_ORDINARY_DAY);
-                entries.add(ModItems.MUSIC_DISC_AERIE);
-                entries.add(ModItems.MUSIC_DISC_ANCESTRY);
-                entries.add(ModItems.MUSIC_DISC_ARIA_MATH);
-                entries.add(ModItems.MUSIC_DISC_AXOLOTL);
-                entries.add(ModItems.MUSIC_DISC_BALLAD_OF_THE_CATS);
-                entries.add(ModItems.MUSIC_DISC_BEGINNING_2);
-                entries.add(ModItems.MUSIC_DISC_BIOME_FEST);
-                entries.add(ModItems.MUSIC_DISC_BLIND_SPOTS);
-                entries.add(ModItems.MUSIC_DISC_BOSS);
-                entries.add(ModItems.MUSIC_DISC_BROMELIAD);
-                entries.add(ModItems.MUSIC_DISC_CHRYSOPOEIA);
-                entries.add(ModItems.MUSIC_DISC_CLARK);
-                entries.add(ModItems.MUSIC_DISC_COMFORTING_MEMORIES);
-                entries.add(ModItems.MUSIC_DISC_CONCRETE_HALLS);
-                entries.add(ModItems.MUSIC_DISC_CRESCENT_DUNES);
-                entries.add(ModItems.MUSIC_DISC_DANNY);
-                entries.add(ModItems.MUSIC_DISC_DEAD_VOXEL);
-                entries.add(ModItems.MUSIC_DISC_DEEPER);
-                entries.add(ModItems.MUSIC_DISC_DRAGON_FISH);
-                entries.add(ModItems.MUSIC_DISC_DREITON);
-                entries.add(ModItems.MUSIC_DISC_DRY_HANDS);
-                entries.add(ModItems.MUSIC_DISC_ECHO_IN_THE_WIND);
-                entries.add(ModItems.MUSIC_DISC_ELD_UNKNOWN);
-                entries.add(ModItems.MUSIC_DISC_ENDLESS);
-                entries.add(ModItems.MUSIC_DISC_FEATHERFALL);
-                entries.add(ModItems.MUSIC_DISC_FIREBUGS);
-                entries.add(ModItems.MUSIC_DISC_FLOATING_DREAM);
-                entries.add(ModItems.MUSIC_DISC_FLOATING_TREES);
-                entries.add(ModItems.MUSIC_DISC_HAGGSTROM);
-                entries.add(ModItems.MUSIC_DISC_HAUNT_MUSKIE);
-                entries.add(ModItems.MUSIC_DISC_INFINITE_AMETHYST);
-                entries.add(ModItems.MUSIC_DISC_KEY);
-                entries.add(ModItems.MUSIC_DISC_KOMOREBI);
-                entries.add(ModItems.MUSIC_DISC_LABYRINTHINE);
-                entries.add(ModItems.MUSIC_DISC_LEFT_TO_BLOOM);
-                entries.add(ModItems.MUSIC_DISC_LIVING_MICE);
-                entries.add(ModItems.MUSIC_DISC_MICE_ON_VENUS);
-                entries.add(ModItems.MUSIC_DISC_MINECRAFT);
-                entries.add(ModItems.MUSIC_DISC_MOOG_CITY_2);
-                entries.add(ModItems.MUSIC_DISC_MUTATION);
-                entries.add(ModItems.MUSIC_DISC_ONE_MORE_DAY);
-                entries.add(ModItems.MUSIC_DISC_OXYGENE);
-                entries.add(ModItems.MUSIC_DISC_POKOPOKO);
-                entries.add(ModItems.MUSIC_DISC_PUZZLEBOX);
-                entries.add(ModItems.MUSIC_DISC_RUBEDO);
-                entries.add(ModItems.MUSIC_DISC_SHUNIJI);
-                entries.add(ModItems.MUSIC_DISC_SO_BELOW);
-                entries.add(ModItems.MUSIC_DISC_STAND_TALL);
-                entries.add(ModItems.MUSIC_DISC_SUBWOOFER_LULLABY);
-                entries.add(ModItems.MUSIC_DISC_SWEDEN);
-                entries.add(ModItems.MUSIC_DISC_TASWELL);
-                entries.add(ModItems.MUSIC_DISC_THE_END);
-                entries.add(ModItems.MUSIC_DISC_WARMTH);
-                entries.add(ModItems.MUSIC_DISC_WATCHER);
-                entries.add(ModItems.MUSIC_DISC_WENDING);
-                entries.add(ModItems.MUSIC_DISC_WET_HANDS);
-                entries.add(ModItems.MUSIC_DISC_YAKUSOKU);
+                ModItems.addDiscsToItemGroupEntries(entries);
             })
             .build();
 

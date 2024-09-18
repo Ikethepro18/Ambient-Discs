@@ -1,0 +1,8 @@
+{
+  "comparator_output": 6,
+  "description": {
+    "translate": "jukebox_song.ambient-discs.warmth"
+  },
+  "length_in_seconds": 239.0,
+  "sound_event": "ambient-discs:warmth"
+}

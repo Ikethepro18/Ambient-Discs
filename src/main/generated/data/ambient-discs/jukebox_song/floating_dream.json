@@ -1,0 +1,8 @@
+{
+  "comparator_output": 10,
+  "description": {
+    "translate": "jukebox_song.ambient-discs.floating_dream"
+  },
+  "length_in_seconds": 205.0,
+  "sound_event": "ambient-discs:floating_dream"
+}

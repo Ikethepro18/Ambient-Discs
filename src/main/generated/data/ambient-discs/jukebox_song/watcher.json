@@ -1,0 +1,8 @@
+{
+  "comparator_output": 4,
+  "description": {
+    "translate": "jukebox_song.ambient-discs.watcher"
+  },
+  "length_in_seconds": 332.0,
+  "sound_event": "ambient-discs:watcher"
+}

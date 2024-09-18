@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "jukebox_song.ambient-discs.left_to_bloom"
+  },
+  "length_in_seconds": 342.0,
+  "sound_event": "ambient-discs:left_to_bloom"
+}

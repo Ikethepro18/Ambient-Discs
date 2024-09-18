@@ -1,0 +1,8 @@
+{
+  "comparator_output": 10,
+  "description": {
+    "translate": "jukebox_song.ambient-discs.subwoofer_lullaby"
+  },
+  "length_in_seconds": 208.0,
+  "sound_event": "ambient-discs:subwoofer_lullaby"
+}

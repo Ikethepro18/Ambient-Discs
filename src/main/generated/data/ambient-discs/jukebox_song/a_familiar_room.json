@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "jukebox_song.ambient-discs.a_familiar_room"
+  },
+  "length_in_seconds": 241.0,
+  "sound_event": "ambient-discs:a_familiar_room"
+}
