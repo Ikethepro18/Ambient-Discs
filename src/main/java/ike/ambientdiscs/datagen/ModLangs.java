@@ -1,11 +1,16 @@
 package ike.ambientdiscs.datagen;
 
 import ike.ambientdiscs.item.ModItems;
+import ike.ambientdiscs.sound.ModdedJukeboxSongs;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.minecraft.block.jukebox.JukeboxSong;
 import net.minecraft.item.Item;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Util;
+
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
@@ -69,7 +74,7 @@ public class ModLangs extends FabricLanguageProvider {
                     @Override
                     public void generateTranslations(RegistryWrapper.WrapperLookup registryLookup, TranslationBuilder translationBuilder) {
                         for (Item musicDiscItem : ModItems.MUSIC_DISCS) {
-                            translationBuilder.add(musicDiscItem, "Music Disc");
+                            translationBuilder.add(musicDiscItem, discName);
                         }
                     }
                 })
@@ -79,5 +84,43 @@ public class ModLangs extends FabricLanguageProvider {
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup registryLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add("itemgroup.ambient_discs", "Ambient Discs");
+        for (Item musicDiscItem : ModItems.MUSIC_DISCS) {
+            translationBuilder.add(musicDiscItem, "Music Disc");
+        }
+
+        Map<RegistryKey<JukeboxSong>, String> jukeboxSongsDescriptions = Map.<RegistryKey<JukeboxSong>, String>ofEntries(
+                Map.entry(ModdedJukeboxSongs.AERIE, "Lena Raine - Aerie"), Map.entry(ModdedJukeboxSongs.ALPHA, "C418 - Alpha"),
+                Map.entry(ModdedJukeboxSongs.ANCESTRY, "Lena Raine - Ancestry"), Map.entry(ModdedJukeboxSongs.AN_ORDINARY_DAY, "Kumi Tanioka - An Ordinary Day"),
+                Map.entry(ModdedJukeboxSongs.ARIA_MATH, "C418 - Aria Math"), Map.entry(ModdedJukeboxSongs.AXOLOTL, "C418 - Axolotl"),
+                Map.entry(ModdedJukeboxSongs.A_FAMILIAR_ROOM, "Aaron Cherof - A Familiar Room"), Map.entry(ModdedJukeboxSongs.BALLAD_OF_THE_CATS, "C418 - Ballad of the Cats"),
+                Map.entry(ModdedJukeboxSongs.BEGINNING_2, "C418 - Beginning 2"), Map.entry(ModdedJukeboxSongs.BIOME_FEST, "C418 - Biome Fest"),
+                Map.entry(ModdedJukeboxSongs.BLIND_SPOTS, "C418 - Blind Spots"), Map.entry(ModdedJukeboxSongs.BOSS, "C418 - Boss"),
+                Map.entry(ModdedJukeboxSongs.BROMELIAD, "Aaron Cherof - Bromeliad"), Map.entry(ModdedJukeboxSongs.CHRYSOPOEIA, "Lena Raine - Chrysopoeia"),
+                Map.entry(ModdedJukeboxSongs.CLARK, "C418 - Clark"), Map.entry(ModdedJukeboxSongs.COMFORTING_MEMORIES, "Kumi Tanioka - Comforting Memories"),
+                Map.entry(ModdedJukeboxSongs.CONCRETE_HALLS, "C418 - Concrete Halls"), Map.entry(ModdedJukeboxSongs.CRESCENT_DUNES, "Aaron Cherof - Crescent Dunes"),
+                Map.entry(ModdedJukeboxSongs.DANNY, "C418 - Danny"), Map.entry(ModdedJukeboxSongs.DEAD_VOXEL, "C418 - Dead Voxel"),
+                Map.entry(ModdedJukeboxSongs.DEEPER, "Lena Raine - Deeper"), Map.entry(ModdedJukeboxSongs.DRAGON_FISH, "C418 - Dragon Fish"),
+                Map.entry(ModdedJukeboxSongs.DREITON, "C418 - Dreiton"), Map.entry(ModdedJukeboxSongs.DRY_HANDS, "C418 - Dry Hands"),
+                Map.entry(ModdedJukeboxSongs.ECHO_IN_THE_WIND, "Aaron Cherof - Echo in the Wind"), Map.entry(ModdedJukeboxSongs.ELD_UNKNOWN, "Lena Raine - Eld Unknown"),
+                Map.entry(ModdedJukeboxSongs.ENDLESS, "Lena Raine - Endless"), Map.entry(ModdedJukeboxSongs.FEATHERFALL, "Aaron Cherof - Featherfall"),
+                Map.entry(ModdedJukeboxSongs.FIREBUGS, "Lena Raine - Firebugs"), Map.entry(ModdedJukeboxSongs.FLOATING_DREAM, "Kumi Tanioka - Floating Dream"),
+                Map.entry(ModdedJukeboxSongs.FLOATING_TREES, "C418 - Floating Trees"), Map.entry(ModdedJukeboxSongs.HAGGSTROM, "C418 - Haggstrom"),
+                Map.entry(ModdedJukeboxSongs.HAUNT_MUSKIE, "C418 - Haunt Muskie"), Map.entry(ModdedJukeboxSongs.INFINITE_AMETHYST, "Lena Raine - Infinite Amethyst"),
+                Map.entry(ModdedJukeboxSongs.KEY, "C418 - Key"), Map.entry(ModdedJukeboxSongs.KOMOREBI, "Kumi Tanioka - Komorebi"),
+                Map.entry(ModdedJukeboxSongs.LABYRINTHINE, "Lena Raine - Labyrinthine"), Map.entry(ModdedJukeboxSongs.LEFT_TO_BLOOM, "Lena Raine - Left to Bloom"),
+                Map.entry(ModdedJukeboxSongs.LIVING_MICE, "C418 - Living Mice"), Map.entry(ModdedJukeboxSongs.MICE_ON_VENUS, "C418 - Mice on Venus"),
+                Map.entry(ModdedJukeboxSongs.MINECRAFT, "C418 - Minecraft"), Map.entry(ModdedJukeboxSongs.MOOG_CITY_2, "C418 - Moog City 2"),
+                Map.entry(ModdedJukeboxSongs.MUTATION, "C418 - Mutation"), Map.entry(ModdedJukeboxSongs.ONE_MORE_DAY, "Lena Raine - One More Day"),
+                Map.entry(ModdedJukeboxSongs.OXYGENE, "C418 - OxygÃ¨ne"), Map.entry(ModdedJukeboxSongs.POKOPOKO, "Kumi Tanioka - Pokopoko"),
+                Map.entry(ModdedJukeboxSongs.PUZZLEBOX, "Aaron Cherof - Puzzlebox"), Map.entry(ModdedJukeboxSongs.RUBEDO, "Lena Raine - Rubedo"),
+                Map.entry(ModdedJukeboxSongs.SHUNIJI, "C418 - Shuniji"), Map.entry(ModdedJukeboxSongs.SO_BELOW, "Lena Raine - So Below"),
+                Map.entry(ModdedJukeboxSongs.STAND_TALL, "Lena Raine - Stand Tall"), Map.entry(ModdedJukeboxSongs.SUBWOOFER_LULLABY, "C418 - Subwoofer Lullaby"),
+                Map.entry(ModdedJukeboxSongs.SWEDEN, "C418 - Sweden"), Map.entry(ModdedJukeboxSongs.TASWELL, "C418 - Taswell"),
+                Map.entry(ModdedJukeboxSongs.THE_END, "C418 - The End"), Map.entry(ModdedJukeboxSongs.WARMTH, "C418 - Warmth"),
+                Map.entry(ModdedJukeboxSongs.WATCHER, "Aaron Cherof - Watcher"), Map.entry(ModdedJukeboxSongs.WENDING, "Lena Raine - Wending"),
+                Map.entry(ModdedJukeboxSongs.WET_HANDS, "C418 - Wet Hands"), Map.entry(ModdedJukeboxSongs.YAKUSOKU, "Kumi Tanioka - Yakusoku")
+        );
+
+        jukeboxSongsDescriptions.forEach((registryKey, description) -> translationBuilder.add(Util.createTranslationKey("jukebox_song", registryKey.getValue()), description));
     }
 }
