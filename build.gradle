@@ -30,7 +30,7 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
 }
 
 processResources {
@@ -59,6 +59,8 @@ jar {
 	from("LICENSE") {
 		rename { "${it}_${project.base.archivesName.get()}"}
 	}
+
+	exclude 'assets/ambient-discs/icon.bbmodel', 'assets/ambient-discs/textures/item/placeholder.png'
 }
 
 // configure the maven publication
