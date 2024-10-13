@@ -7,7 +7,18 @@
 Ambient Discs is a simple mod that takes the vanilla Minecraft soundtrack and adds music discs for all that don't. This way, you can listen to any piece of the Minecraft soundtrack at any time you please.
 
 ## How do I Get the Discs?
-For the most part, all discs will be obtained the "good old fashioned way" via skeletons killing creepers. However, there is room in the future for discs to be found in vanilla, or potentially custom, structures to add more merit to exploration.
+For the most part, all discs will be obtained the "good old fashioned way" via skeletons killing creepers. However, some are instead found in chests or dropped by mobs. A list of these can be found below.
+<details>
+<summary>Click to expand the table</summary>
+
+| Music Disc                                                                                                                                                                                                                                                                             | Location           | Chance |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|--------|
+| <img src="https://raw.githubusercontent.com/Ikethepro18/Ambient-Discs/refs/heads/1.20.x/src/main/resources/assets/ambient-discs/textures/item/music_disc_a_familiar_room.png" alt="Music Disc A Familiar Room" width="21" height="21" style="vertical-align: middle;"> A Familiar Room | Jungle Temple      | 10%    |
+| <img src="https://raw.githubusercontent.com/Ikethepro18/Ambient-Discs/refs/heads/1.20.x/src/main/resources/assets/ambient-discs/textures/item/music_disc_alpha.png" alt="Music Disc Alpha" width="21" height="21" style="vertical-align: middle;"> Alpha                               | Ender Dragon       | 100%   |
+| <img src="https://raw.githubusercontent.com/Ikethepro18/Ambient-Discs/refs/heads/1.20.x/src/main/resources/assets/ambient-discs/textures/item/music_disc_an_ordinary_day.png" alt="Music Disc An Ordinary Day" width="21" height="21" style="vertical-align: middle;"> An Ordinary Day | Ancient City       | 8.4%   |
+| <img src="https://raw.githubusercontent.com/Ikethepro18/Ambient-Discs/refs/heads/1.20.x/src/main/resources/assets/ambient-discs/textures/item/music_disc_axolotl.png" alt="Music Disc Axolotl" width="21" height="21" style="vertical-align: middle;"> Axolotl                         | Shipwreck Treasure | 33%    |
+
+</details>
 
 ## Will this Mod have Composer's Tracks?
 No, only tracks included in the vanilla game will get a disc. This is mainly for licensing reasons, but also because then it'd end up with hundreds of music discs which is frankly too many.

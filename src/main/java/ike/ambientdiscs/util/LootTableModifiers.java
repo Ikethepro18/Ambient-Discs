@@ -12,28 +12,72 @@ import net.minecraft.util.Identifier;
 
 public class LootTableModifiers {
     //Define loot tables with an internal identifier
-    private static final Identifier SHIPWRECK_TREASURE_CHEST_ID
-            = Identifier.of("minecraft", "chests/shipwreck_treasure");
-    private static final Identifier JUNGLE_TEMPLE_BASEMENT_CHEST_ID
+    private static final Identifier JUNGLE_TEMPLE_CHEST
             = Identifier.of("minecraft", "chests/jungle_temple");
+    private static final Identifier ENDER_DRAGON
+            = Identifier.of("minecraft","entities/ender_dragon");
+    private static final Identifier MINESHAFT
+            = Identifier.of("minecraft", "chests/abandoned_mineshaft");
+    private static final Identifier ANCIENT_CITY
+            = Identifier.of("minecraft", "chests/ancient_city");
+    private static final Identifier SHIPWRECK_TREASURE_CHEST
+            = Identifier.of("minecraft", "chests/shipwreck_treasure");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
-            if(source.isBuiltin() && SHIPWRECK_TREASURE_CHEST_ID.equals(key.getValue())) {
+
+            //A Familiar Room
+            //10% chance find in Jungle Temple chests
+            if(source.isBuiltin() && JUNGLE_TEMPLE_CHEST.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.1f))
+                        .with(ItemEntry.builder(ModItems.MUSIC_DISC_A_FAMILIAR_ROOM))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            //Alpha
+            //100% chance to drop from the Ender Dragon
+            if(source.isBuiltin() && ENDER_DRAGON.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModItems.MUSIC_DISC_ALPHA))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            //An Ordinary Day
+            //5% chance to find in Mineshaft chests
+            if(source.isBuiltin() && MINESHAFT.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
+                        .with(ItemEntry.builder(ModItems.MUSIC_DISC_AN_ORDINARY_DAY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            //Ancestry
+            //8.4% chance to find in Ancient City chests
+            if(source.isBuiltin() && ANCIENT_CITY.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.084f))
+                        .with(ItemEntry.builder(ModItems.MUSIC_DISC_ANCESTRY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            //Axolotl
+            //33% chance to find in Shipwreck treasure chests
+            if(source.isBuiltin() && SHIPWRECK_TREASURE_CHEST.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.3333f))
                         .with(ItemEntry.builder(ModItems.MUSIC_DISC_AXOLOTL))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
-                tableBuilder.pool(poolBuilder.build());
-            }
-
-            if(source.isBuiltin() && JUNGLE_TEMPLE_BASEMENT_CHEST_ID.equals(key.getValue())) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.6f))
-                        .with(ItemEntry.builder(ModItems.MUSIC_DISC_A_FAMILIAR_ROOM))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0f,5.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
         });
