@@ -3,6 +3,7 @@ package ike.ambientdiscs;
 import ike.ambientdiscs.item.ModItemGroups;
 import ike.ambientdiscs.item.ModItems;
 import ike.ambientdiscs.sound.ModSounds;
+import ike.ambientdiscs.util.LootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,6 +19,7 @@ public class AmbientDiscs implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItem();
 		ModSounds.registerSounds();
+		LootTableModifiers.modifyLootTables();
 		LOGGER.info("Ambient Discs initialised, probably...");
 	}
 }

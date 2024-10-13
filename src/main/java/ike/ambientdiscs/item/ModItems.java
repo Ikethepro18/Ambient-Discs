@@ -18,12 +18,10 @@ import java.util.List;
 
 public class ModItems {
     //All items
-    //Don't forget to add to custom creative tab in ModItemGroups
-    //And in ModSounds
+    //Make sure to add to ModSounds
     //And in ModdedJukeboxSongs
-    //And to add textures/models (datagen)
-    //And to add to langs
     //And to music_discs.json
+    //And set it up in a loot table in LootTableModifiers (or as a creeper drop in ModItemTags)
 
     //public static final Item MUSIC_DISC_ = registerSimpleMusicDiscItem("music_disc_", ModdedJukeboxSongs.{song});
 
