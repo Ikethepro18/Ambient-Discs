@@ -111,7 +111,7 @@ public class ModLangs extends FabricLanguageProvider {
                 Map.entry(ModdedJukeboxSongs.LIVING_MICE, "C418 - Living Mice"), Map.entry(ModdedJukeboxSongs.MICE_ON_VENUS, "C418 - Mice on Venus"),
                 Map.entry(ModdedJukeboxSongs.MINECRAFT, "C418 - Minecraft"), Map.entry(ModdedJukeboxSongs.MOOG_CITY_2, "C418 - Moog City 2"),
                 Map.entry(ModdedJukeboxSongs.MUTATION, "C418 - Mutation"), Map.entry(ModdedJukeboxSongs.ONE_MORE_DAY, "Lena Raine - One More Day"),
-                Map.entry(ModdedJukeboxSongs.OXYGENE, "C418 - OxygÃ¨ne"), Map.entry(ModdedJukeboxSongs.POKOPOKO, "Kumi Tanioka - Pokopoko"),
+                Map.entry(ModdedJukeboxSongs.OXYGENE, "C418 - Oxygène"), Map.entry(ModdedJukeboxSongs.POKOPOKO, "Kumi Tanioka - Pokopoko"),
                 Map.entry(ModdedJukeboxSongs.PUZZLEBOX, "Aaron Cherof - Puzzlebox"), Map.entry(ModdedJukeboxSongs.RUBEDO, "Lena Raine - Rubedo"),
                 Map.entry(ModdedJukeboxSongs.SHUNIJI, "C418 - Shuniji"), Map.entry(ModdedJukeboxSongs.SO_BELOW, "Lena Raine - So Below"),
                 Map.entry(ModdedJukeboxSongs.STAND_TALL, "Lena Raine - Stand Tall"), Map.entry(ModdedJukeboxSongs.SUBWOOFER_LULLABY, "C418 - Subwoofer Lullaby"),
