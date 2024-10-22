@@ -20,8 +20,12 @@ public class LootTableModifiers {
             = Identifier.of("minecraft", "chests/abandoned_mineshaft");
     private static final Identifier ANCIENT_CITY
             = Identifier.of("minecraft", "chests/ancient_city");
+    private static final Identifier DUNGEON
+            = Identifier.of("minecraft", "chests/simple_dungeon");
     private static final Identifier SHIPWRECK_TREASURE_CHEST
             = Identifier.of("minecraft", "chests/shipwreck_treasure");
+    private static final Identifier NETHER_FORTRESS
+            = Identifier.of("minecraft", "chests/nether_bridge");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
@@ -70,6 +74,17 @@ public class LootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             }
 
+            //Aria Math
+            //15% chance to find in Dungeon chests
+            if(source.isBuiltin() && DUNGEON.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
+                        .with(ItemEntry.builder(ModItems.MUSIC_DISC_ARIA_MATH))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
             //Axolotl
             //33% chance to find in Shipwreck treasure chests
             if(source.isBuiltin() && SHIPWRECK_TREASURE_CHEST.equals(key.getValue())) {
@@ -77,6 +92,17 @@ public class LootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.3333f))
                         .with(ItemEntry.builder(ModItems.MUSIC_DISC_AXOLOTL))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            //Ballad of the Cats
+            //6.7% chance to find in Dungeon chests
+            if(source.isBuiltin() && NETHER_FORTRESS.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.067f))
+                        .with(ItemEntry.builder(ModItems.MUSIC_DISC_BALLAD_OF_THE_CATS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }

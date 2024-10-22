@@ -19,8 +19,6 @@ public class ModItemTags extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
                 .add(ModItems.MUSIC_DISC_AERIE)
-                .add(ModItems.MUSIC_DISC_ARIA_MATH)
-                .add(ModItems.MUSIC_DISC_BALLAD_OF_THE_CATS)
                 .add(ModItems.MUSIC_DISC_BEGINNING_2)
                 .add(ModItems.MUSIC_DISC_BIOME_FEST)
                 .add(ModItems.MUSIC_DISC_BLIND_SPOTS)
