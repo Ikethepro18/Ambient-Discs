@@ -22,7 +22,6 @@ public class ModItemTags extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.MUSIC_DISC_BEGINNING_2)
                 .add(ModItems.MUSIC_DISC_BIOME_FEST)
                 .add(ModItems.MUSIC_DISC_BLIND_SPOTS)
-                .add(ModItems.MUSIC_DISC_BOSS)
                 .add(ModItems.MUSIC_DISC_BROMELIAD)
                 .add(ModItems.MUSIC_DISC_CHRYSOPOEIA)
                 .add(ModItems.MUSIC_DISC_CLARK)

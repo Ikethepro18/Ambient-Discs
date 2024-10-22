@@ -16,16 +16,18 @@ public class LootTableModifiers {
             = Identifier.of("minecraft", "chests/jungle_temple");
     private static final Identifier ENDER_DRAGON
             = Identifier.of("minecraft","entities/ender_dragon");
-    private static final Identifier MINESHAFT
+    private static final Identifier MINESHAFT_MINECART_CHEST
             = Identifier.of("minecraft", "chests/abandoned_mineshaft");
     private static final Identifier ANCIENT_CITY
             = Identifier.of("minecraft", "chests/ancient_city");
-    private static final Identifier DUNGEON
+    private static final Identifier DUNGEON_CHEST
             = Identifier.of("minecraft", "chests/simple_dungeon");
     private static final Identifier SHIPWRECK_TREASURE_CHEST
             = Identifier.of("minecraft", "chests/shipwreck_treasure");
-    private static final Identifier NETHER_FORTRESS
+    private static final Identifier NETHER_FORTRESS_CHEST
             = Identifier.of("minecraft", "chests/nether_bridge");
+    private static final Identifier END_CITY_CHEST
+            = Identifier.of("minecraft", "chests/end_city_treasure");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
@@ -54,7 +56,7 @@ public class LootTableModifiers {
 
             //An Ordinary Day
             //5% chance to find in Mineshaft chests
-            if(source.isBuiltin() && MINESHAFT.equals(key.getValue())) {
+            if(source.isBuiltin() && MINESHAFT_MINECART_CHEST.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.05f))
@@ -76,7 +78,7 @@ public class LootTableModifiers {
 
             //Aria Math
             //15% chance to find in Dungeon chests
-            if(source.isBuiltin() && DUNGEON.equals(key.getValue())) {
+            if(source.isBuiltin() && DUNGEON_CHEST.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.15f))
@@ -97,12 +99,23 @@ public class LootTableModifiers {
             }
 
             //Ballad of the Cats
-            //6.7% chance to find in Dungeon chests
-            if(source.isBuiltin() && NETHER_FORTRESS.equals(key.getValue())) {
+            //6.7% chance to find in Nether Fortress chests
+            if(source.isBuiltin() && NETHER_FORTRESS_CHEST.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.067f))
                         .with(ItemEntry.builder(ModItems.MUSIC_DISC_BALLAD_OF_THE_CATS))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            //Boss
+            //21% chance find in End City chests
+            if(source.isBuiltin() && END_CITY_CHEST.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.21f))
+                        .with(ItemEntry.builder(ModItems.MUSIC_DISC_BOSS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
