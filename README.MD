@@ -31,19 +31,19 @@ Yes you can use this mod in your modpack, or tweak and remix it in your own way 
 ## How do I build this?
 If you've ever built a mod before, it's as simple as you'd expect. If it's your first time building a mod, it's quite simple really.
 
-1. If you've got Git installed, you can use `git clone https://github.com/Ikethepro18/Ambient-Discs.git` to a directory of your choice to clone the project 
+1. If you've got Git installed, you can use `git clone https://github.com/Ikethepro18/Ambient-Discs.git` to a directory of your choice to clone the project
    - If you don't have Git installed you can use `winget install git.git` and restart Command Prompt/Powershell/Terminal to install Git
    - If you don't want to do that then you can just download the zip from [master](https://github.com/Ikethepro18/Ambient-Discs/archive/refs/heads/master.zip) and unzip it to a directory of your choice
 2. Open command prompt or terminal into that directory<sup>[?](https://www.lifewire.com/open-command-prompt-in-a-folder-5185505)</sup>
 3. Run `.\gradlew build`
-   - If you get the error 
-   
+   - If you get the error
+
    ```
    ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
    
    Please set the JAVA_HOME variable in your environment to match the location of your Java installation.
    ```
-   
+
    or are told you're using an outdated version of Java, then run `winget install Oracle.JDK.21` and make sure you set it as your Java home (you can check this by running `java --version` and ensuring it's Java 21)
 
 4. You should find your compiled mod at `.\build\libs\ambient-discs-{version}.jar` which you can do with whatever you please

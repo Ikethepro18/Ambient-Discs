@@ -99,7 +99,7 @@ public class LootTableModifiers {
             }
 
             //Ballad of the Cats
-            //6.7% chance to find in Nether Fortress chests
+            //6.7% chance to find in Dungeon chests
             if(source.isBuiltin() && NETHER_FORTRESS_CHEST.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
