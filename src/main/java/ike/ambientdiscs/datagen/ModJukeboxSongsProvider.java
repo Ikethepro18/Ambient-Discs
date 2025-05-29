@@ -14,7 +14,7 @@ public class ModJukeboxSongsProvider extends FabricDynamicRegistryProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
-        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.JUKEBOX_SONG));
+        entries.addAll(registries.getOrThrow(RegistryKeys.JUKEBOX_SONG));
     }
 
     @Override
