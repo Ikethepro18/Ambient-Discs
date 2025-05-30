@@ -10,6 +10,7 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
@@ -99,7 +100,9 @@ public class ModItems {
     }
 
     private static Item registerSimpleMusicDiscItem(String name, RegistryKey<JukeboxSong> songKey) {
-        Item item = new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(songKey));
+        Item item = new Item(new Item.Settings()
+                .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(AmbientDiscs.MOD_ID, name)))
+                .maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(songKey));
         MUSIC_DISCS.add(item);
         return registerItem(name, item);
     }
